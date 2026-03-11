@@ -18,7 +18,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # ─────────────────────────────────────────────────────────
-# CONFIGURACIÓN — CAMBIA SOLO ESTAS 2 RUTAS
+# CONFIGURACIÓN 
 # ─────────────────────────────────────────────────────────
 RUTA_INPUT  = r"C:\Users\HP\Downloads\Fact_Lineas_Limpia.csv"
 RUTA_OUTPUT = r"C:\Users\HP\Downloads\Forecasts"
@@ -214,10 +214,4 @@ for f in sorted(os.listdir(RUTA_OUTPUT)):
         print(f"  {f}  ({kb:.1f} KB)")
 
 print(f"\nCarpeta: {RUTA_OUTPUT}")
-print("""
-Power BI — pasos:
-  1. Importa Forecast_Ventas_Mensual.csv  -> tabla 'Forecast_Ventas_Mensual'
-  2. Importa Forecast_Por_Sede.csv        -> tabla 'Forecast_Por_Sede'
-  3. Relacion: Forecast_Ventas_Mensual[Fecha] -> Dim_Fecha[Date]
-  4. Grafico linea: Fecha en X, Venta Real + Venta Forecast en Y
-""")
+
